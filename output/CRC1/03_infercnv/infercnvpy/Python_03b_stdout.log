@@ -1,0 +1,12 @@
+2026-06-14 23:14:40 | loading clustered AnnData
+2026-06-14 23:14:41 | loaded object: 4457 spots x 36601 genes
+2026-06-14 23:14:41 | loading gene position table
+2026-06-14 23:14:41 | gene position overlap: 33845 genes
+2026-06-14 23:14:41 | subsetting AnnData and joining gene coordinates
+2026-06-14 23:14:44 | reference cluster selected: 16
+2026-06-14 23:14:44 | starting infercnvpy.tl.infercnv (window_size=100, step=10, n_jobs=4, chunksize=1000)
+2026-06-14 23:14:56 | infercnvpy.tl.infercnv completed
+2026-06-14 23:14:56 | CNV matrix ready: 4457 spots x 3058 windows/features
+2026-06-14 23:14:56 | running KMeans on CNV matrix
+2026-06-14 23:15:05 | saving CNV calls and AnnData result
+2026-06-14 23:15:07 | step 03b completed

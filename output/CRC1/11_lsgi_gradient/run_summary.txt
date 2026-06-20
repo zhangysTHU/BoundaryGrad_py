@@ -1,0 +1,30 @@
+Cottrazm Python + R LSGI cell-component gradient analysis
+=========================================================
+
+Sample: CRC1 
+Matched spots: 4457 
+Cell components: T, Myeloid, B/Plasma, Fibroblast, Endothelial, Tumor, Epithelial 
+Grid clustering backend: anticlust::balanced_clustering 0.6.1 
+n.grids.scale: 10 
+n.cells.per.meta: 50 
+R-squared threshold: 0.3 
+Minimum arrows per component: 3 
+Selected gradient arrows: 510 
+
+Arrow length scale: 1.4 
+Arrow linewidth: 1 
+Arrow head cm: 0.2 
+Arrow closed: TRUE 
+Reused LSGI result: TRUE 
+
+Inputs:
+- D:/bioinfozhangys/files of jupyter/Cottrazm-main/scripts_format_python/intermediate/lsgi_input/spatial_coords.csv
+- D:/bioinfozhangys/files of jupyter/Cottrazm-main/scripts_format_python/intermediate/lsgi_input/cell_component_embeddings.csv
+- D:/bioinfozhangys/files of jupyter/Cottrazm-main/scripts_format_python/intermediate/lsgi_input/boundary_labels.csv
+
+Outputs:
+- D:/bioinfozhangys/files of jupyter/Cottrazm-main/scripts_format_python/intermediate/11_lsgi_cell_component_result.rds.gz
+- D:/bioinfozhangys/files of jupyter/Cottrazm-main/scripts_format_python/output/11_lsgi_gradient/grid_info.csv
+- D:/bioinfozhangys/files of jupyter/Cottrazm-main/scripts_format_python/output/11_lsgi_gradient/cell_component_gradient_arrows.csv
+- D:/bioinfozhangys/files of jupyter/Cottrazm-main/scripts_format_python/output/11_lsgi_gradient/CRC1_BoundaryDefine_LSGIGradient.pdf
+- D:/bioinfozhangys/files of jupyter/Cottrazm-main/scripts_format_python/output/11_lsgi_gradient/CRC1_BoundaryDefine_HE_LSGIGradient.pdf

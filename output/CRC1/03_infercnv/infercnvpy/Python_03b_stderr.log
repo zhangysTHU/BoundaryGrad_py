@@ -1,0 +1,3 @@
+D:\bioinfozhangys\files of jupyter\Cottrazm-main\scripts_format_python\03b_run_infercnvpy.py:98: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  normal_cluster = adata.obs.groupby("seurat_clusters")["NormalScore"].mean().sort_values(ascending=False).index[0]
+  0%|          | 0/5 [00:00<?, ?it/s] 20%|¨€¨€        | 1/5 [00:07<00:29,  7.39s/it] 40%|¨€¨€¨€¨€      | 2/5 [00:08<00:10,  3.44s/it] 60%|¨€¨€¨€¨€¨€¨€    | 3/5 [00:08<00:04,  2.24s/it] 80%|¨€¨€¨€¨€¨€¨€¨€¨€  | 4/5 [00:09<00:01,  1.70s/it]100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [00:09<00:00,  1.95s/it]

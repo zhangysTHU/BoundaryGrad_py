@@ -1,0 +1,40 @@
+[2026-06-15 10:31:31] Running 01_preprocess_st.py
+[2026-06-15 10:31:41] Running 02_morphology_adjusted_cluster.py
+The morphology feature is added to adata.obsm['X_morphology']!
+Normalization step is finished in adata.X
+Log transformation step is finished in adata.X
+PCA is done! Generated in adata.obsm['X_pca'], adata.uns['pca'] and adata.varm['PCs']
+The data adjusted by SME is added to adata.obsm['raw_SME_normalized']
+[2026-06-15 10:45:08] Running 03b_run_infercnvpy.py
+2026-06-15 10:45:14 | loading clustered AnnData
+2026-06-15 10:45:15 | loaded object: 4457 spots x 36601 genes
+2026-06-15 10:45:15 | loading gene position table
+2026-06-15 10:45:15 | gene position overlap: 33845 genes
+2026-06-15 10:45:15 | subsetting AnnData and joining gene coordinates
+2026-06-15 10:45:17 | reference cluster selected: 16
+2026-06-15 10:45:17 | starting infercnvpy.tl.infercnv (window_size=100, step=10, n_jobs=4, chunksize=1000)
+2026-06-15 10:45:28 | infercnvpy.tl.infercnv completed
+2026-06-15 10:45:28 | CNV matrix ready: 4457 spots x 3058 windows/features
+2026-06-15 10:45:28 | running KMeans on CNV matrix
+2026-06-15 10:45:35 | saving CNV calls and AnnData result
+2026-06-15 10:45:37 | step 03b completed
+[2026-06-15 10:45:38] Running 04_score_cnv.py
+[2026-06-15 10:45:48] Running 05_define_boundary.py
+[2026-06-15 10:45:58] Running 06_prepare_single_cell_reference.py
+[2026-06-15 10:46:02] Running 07_spatial_deconvolution.py
+[2026-06-15 10:46:23] Running 08_spatial_reconstruction.py
+[08] reconstructing 512 spots for locations=['Bdy']
+[08] reconstructed 50/512 spots
+[08] reconstructed 100/512 spots
+[08] reconstructed 150/512 spots
+[08] reconstructed 200/512 spots
+[08] reconstructed 250/512 spots
+[08] reconstructed 300/512 spots
+[08] reconstructed 350/512 spots
+[08] reconstructed 400/512 spots
+[08] reconstructed 450/512 spots
+[08] reconstructed 500/512 spots
+[08] reconstructed 512/512 spots
+[2026-06-15 10:59:50] Running 09_diff_and_enrichment.py
+[2026-06-15 11:00:36] Running 10_plot_results.py
+[2026-06-15 11:01:19] Python workflow completed.

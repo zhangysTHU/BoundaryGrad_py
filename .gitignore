@@ -21,16 +21,13 @@ renv/python/
 renv/sandbox/
 renv/staging/
 
-# Sample data and generated workflow products
-input/*
-!input/.gitkeep
+# Generated intermediate workflow products
 intermediate/*
 !intermediate/.gitkeep
-output/*
-!output/.gitkeep
 
 # Logs, temporary files, and editor/OS metadata
 *.log
+!output/**/*.log
 *.tmp
 *.temp
 .DS_Store
